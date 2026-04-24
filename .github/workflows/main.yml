@@ -23,4 +23,4 @@ jobs:
         run: ./mvnw clean package -DskipTests
 
       - name: Deploy war file
-        run: copy target\*.war F:\tools\tomcat-11\webapps
+        run: copy target\*.war E:\tomcat-11\webapps
