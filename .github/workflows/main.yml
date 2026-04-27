@@ -17,6 +17,7 @@ jobs:
           clean: true
 
       - name: Build with Maven Wrapper
+        shell: cmd
         run: E:\maven-3\bin\mvn -e clean package -Daether.connector.https.securityMode=insecure
 
       - name: Deploy war file
