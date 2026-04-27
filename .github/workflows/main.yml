@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
       - name: Build with Maven Wrapper
         shell: cmd
