@@ -17,7 +17,7 @@ jobs:
           clean: true
 
       - name: Build with Maven Wrapper
-        run: ./mvnw clean package -DskipTests -DproxySet=true -Dhttp.proxyHost=192.168.22.251 -Dhttp.proxyPort=8888 -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+        run: E:\maven-3\bin\mvn -e clean package -Daether.connector.https.securityMode=insecure
 
       - name: Deploy war file
         run: copy target\*.war E:\tomcat-11\webapps
