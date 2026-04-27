@@ -12,9 +12,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
-          submodules: false
-          clean: true
+          persist-credentials: false
 
       - name: Build with Maven Wrapper
         shell: cmd
