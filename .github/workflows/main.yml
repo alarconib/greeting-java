@@ -21,4 +21,5 @@ jobs:
         run: E:\maven-3\bin\mvn -e clean package -Daether.connector.https.securityMode=insecure
 
       - name: Deploy war file
+        shell: cmd
         run: copy target\*.war E:\tomcat-11\webapps
