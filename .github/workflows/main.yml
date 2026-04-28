@@ -12,4 +12,4 @@ jobs:
 
       - name: Test application
         shell: powershell
-        run: E:\scripts\tosca_execution_client.ps1 -toscaServerUrl "https://attweb.testbsp.gov.ph" -projectName "BSP_ATT" -events '["Github Test Event"]' -clientId "Wzn5dtxxME6oDwSVCWsnMg" -clientSecret "1A0PtDth0kWOdTsp7yMVvAKql4MNGqJU6sfO1zcZKKkQ"
+        run: E:\tosca-execution-client\tosca_execution_client.ps1 -toscaServerUrl "https://attweb.testbsp.gov.ph" -projectName "BSP_ATT" -events '["Github Test Event"]' -clientId "Wzn5dtxxME6oDwSVCWsnMg" -clientSecret "1A0PtDth0kWOdTsp7yMVvAKql4MNGqJU6sfO1zcZKKkQ"
