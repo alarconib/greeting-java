@@ -9,13 +9,7 @@ jobs:
     runs-on: self-hosted
     
     steps:
-      - name: Check out code
-        uses: actions/checkout@v4
 
-      - name: Build with Maven Wrapper
-        shell: cmd
-        run: E:\maven-3\bin\mvn -e clean package
-
-      - name: Deploy war file
-        shell: cmd
-        run: copy target\*.war E:\tomcat-11\webapps
+      - name: Test application
+        shell: powershell
+        run: E:\scripts\tosca_execution_client.ps1 -toscaServerUrl "https://attweb.testbsp.gov.ph" -projectName "BSP_ATT" -events '["Github Test Event"]' -clientId "Wzn5dtxxME6oDwSVCWsnMg" -clientSecret "1A0PtDth0kWOdTsp7yMVvAKql4MNGqJU6sfO1zcZKKkQ" -resultsFolderPath "E:\tosca-results"
